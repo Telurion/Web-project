@@ -7,11 +7,11 @@
     <title>CIGEMS - Home</title>
 </head>
 <body>
-    <header class="navbar">
+    <header>
         <a href="../html/index.html" class="logo">
             <img src="../img/logo.png" alt="LOGO_Img" width="400">
         </a>
-        <nav class="navlinks">
+        <nav>
             <a href="./index.html">HOME</a>
             <a href="./find_gem.html">FIND YOUR GEM</a>
             <a href="./products.html">OUR PRODUCTS</a>
@@ -19,11 +19,85 @@
         </nav>
     </header>
     
-    <section class="banner">
-        <div class="banner-text">
+    <section class="banner banner_1">
+        <div class="banner_text">
             <h1>Welcome to CIGEMS</h1>
             <p>- your heaven to find a perfect gem -</p>
         </div>
     </section>
+
+    <section class="slideshow">
+        <div class="slodeshow_images">
+            <div class="img_slide">
+                <div class="number">1 / 5</div>
+                <img class="slideshow_img" src="best_seller1.jpg">
+            </div>
+            <div class="img_slide">
+                <div class="number">2 / 5</div>
+                <img class="slideshow_img" src="best_seller2.jpg">
+            </div>
+            <div class="img_slide">
+                <div class="number">3 / 5</div>
+                <img class="slideshow_img" src="best_seller3.jpg">
+            </div>
+            <div class="img_slide">
+                <div class="number">4 / 5</div>
+                <img class="slideshow_img" src="best_seller4.jpg">
+            </div>
+            <div class="img_slide">
+                <div class="number">5 / 5</div>
+                <img class="slideshow_img" src="best_seller5.jpg">
+            </div>
+            
+            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>©️2025 Isabelle Somphone & Corentin Monsallier.</p>
+        <p>All rights reserved.</p>
+    </footer>
+
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
 </body>
 </html>

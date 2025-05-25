@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 .logo img {
     max-height: 70px;
     max-width: 70px;
 }
 
-.navbar {
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+}
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,30 +23,22 @@
     background-color: white;
     border-bottom: 1px solid black;
 }
-
-.navlinks{
-    display: flex;
-    gap: 25px;
-}
-
-.navlinks a {
+nav a {
     text-decoration: none;
     color: black;
     padding: 10px;
 }
-
-header {
+nav{
     display: flex;
+    gap: 25px;
+}
+h1 {
+    font-family: 'Anzicar Serif', serif;
 }
 
-body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: white;
-}
 
 .banner {
     height: 500px;
-    background-image: url(../img/gems4.jpg);
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -48,4 +47,167 @@ body {
     align-items: center;
     padding-left: 10%;
     color: white;
-  }
+}
+.banner_1 {
+    background-image: url(../img/gems4.jpg);
+}
+.banner_2 {
+    background-image: url(../img/gems1.jpg);
+}
+.banner_3 {
+    background-image: url(../img/gems2.jpg);
+}
+.banner_4 {
+    background-image: url(../img/gems7.jpg);
+}
+.banner_text {
+    text-align: center;
+}
+
+.find_gem {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.wheel_selector {
+    background-color: aqua;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.wheel_selector .spin_btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 50%;
+    background: #555;
+}
+.sign_selector {
+    background-color: blanchedalmond;
+    width: 400px;
+    height: 400px;
+}
+
+
+
+
+/* PRODUCTS */
+
+.products {
+    padding: 40px;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    font-family: 'Anzicar Serif', serif;
+}
+.prod {
+    height: 100px;
+    width: 100px;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.prod1, .prod2 {
+    margin: 5px;
+    box-shadow: 0 2px 4px 0 black;
+    width: 300px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.products button:hover {
+    transition: 0.4s;
+    opacity: 0.4;
+}
+
+
+
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.img_slide {
+    display: none;
+}
+.slideshow_img {
+    width: 100%;
+}
+.previous, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.number {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dots {
+    text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
