@@ -10,6 +10,7 @@
     max-width: 70px;
 }
 
+.logo { flex:1; } 
 
 body {
     font-family: 'Times New Roman', Times, serif;
@@ -28,7 +29,9 @@ nav a {
     color: black;
     padding: 10px;
 }
+
 nav{
+    flex : 2;
     display: flex;
     gap: 25px;
 }
@@ -99,11 +102,15 @@ h1 {
 /* PRODUCTS */
 
 .products {
-    padding: 40px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
     margin: auto;
     text-align: center;
     font-family: 'Anzicar Serif', serif;
+    max-width: 1200px;
 }
 .prod {
     height: 100px;
@@ -115,13 +122,14 @@ h1 {
     font-size: 22px;
 }
 
-.prod1, .prod2 {
+.prod1, .prod2 , .prod3, .prod4, .prod5, .prod6{
     margin: 5px;
     box-shadow: 0 2px 4px 0 black;
     width: 300px;
 }
 
 button {
+    font-family: 'Anzicar Serif', serif;
     border: none;
     outline: 0;
     padding: 12px;
@@ -139,6 +147,8 @@ button {
 }
 
 
+
+/*coco */
 
 .slideshow {
     max-width: 1000px;
