@@ -17,6 +17,7 @@
             <a href="./products.html">OUR PRODUCTS</a>
             <a href="./about_us.html">ABOUT US</a>
         </nav>
+        <button id="openModal" class="sign_up_button">SIGN UP</button>
     </header>
     
     <section class="banner banner_4">
@@ -65,10 +66,37 @@
             <p><button>Add to Cart</button></p>
         </div>
     </section>
+
     <footer>
         <p>©️2025 Isabelle Somphone & Corentin Monsallier.</p>
         <p>All rights reserved.</p>
     </footer>
+
+    <section id="signupModal" class="form_sign_up">
+        <div class="form-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" min="0" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+
+            <label for="repeat-password">Repeat Password</label>
+            <input type="password" id="repeat-password" required>
+
+            <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+<script src="../js/script.js"></script>
 
 </body>
 </html>
