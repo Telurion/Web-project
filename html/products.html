@@ -13,11 +13,17 @@
         </a>
         <nav>
             <a href="./index.html">HOME</a>
-            <a href="./find_gem.html">FIND YOUR GEM</a>
+            <!--<a href="./find_gem.html">FIND YOUR GEM</a>-->
             <a href="./products.html">OUR PRODUCTS</a>
             <a href="./about_us.html">ABOUT US</a>
         </nav>
+        <div class="cart">
+            <img src="../img/cart.png" alt="Cart Icon" class="cart-icon">
+        <span class="cart-count">0</span>
+        </div>
         <button id="openModal" class="sign_up_button">SIGN UP</button>
+        <button id="openLogin" class="login_button">LOGIN</button>
+
     </header>
     
     <section class="banner banner_4">
@@ -67,6 +73,8 @@
         </div>
     </section>
 
+    
+
     <footer>
         <p>©️2025 Isabelle Somphone & Corentin Monsallier.</p>
         <p>All rights reserved.</p>
@@ -96,6 +104,33 @@
             </form>
         </div>
     </section>
+
+    <section id="login_form" class="form_sign_up">
+    <div class="form-content">
+        <span class="close-login">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" required>
+
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" required>
+
+        <button type="submit">Login</button>
+        </form>
+    </div>
+    </section>
+
+<div id="cartSidebar" class="cart-sidebar">
+  <h2>Your Cart</h2>
+  <ul id="cartItems"></ul>
+  <button id="closeCart">Close</button>
+</div>
+
+
+
+
+<script src="../js/cart.js"></script>
 <script src="../js/script.js"></script>
 
 </body>

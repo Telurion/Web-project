@@ -34,4 +34,44 @@ document.addEventListener("DOMContentLoaded", () => {
         form.reset();
     });
   }
+
+  const loginModal = document.getElementById("login_form");
+const openLogin = document.getElementById("openLogin");
+const closeLogin = document.querySelector(".close-login");
+const loginForm = document.getElementById("loginForm");
+
+if (openLogin && loginModal && closeLogin && loginForm) {
+  openLogin.onclick = () => loginModal.style.display = "block";
+  closeLogin.onclick = () => loginModal.style.display = "none";
+  window.onclick = (e) => {
+    if (e.target === loginModal) loginModal.style.display = "none";
+  };
+
+  loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    
+    const email = document.getElementById("login-email").value;
+    const password = document.getElementById("login-password").value;
+
+    fetch("http://localhost:3000/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password })
+    })
+    .then(res => res.json())
+    .then(data => {
+      alert(data.message);
+      if (data.success) {
+        loginModal.style.display = "none";
+        loginForm.reset();
+      }
+    })
+    .catch(err => {
+      console.error(err);
+      alert("Login failed.");
+    });
+  });
+}
 });
+
+
