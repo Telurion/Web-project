@@ -1,101 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.logo img {
-    max-height: 70px;
-    max-width: 70px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo { flex:1; } 
+.logo img {
+  max-height: 70px;
+  max-width: 70px;
+}
+
+.logo {
+  flex: 1;
+}
 
 body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: white;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background-color: white;
-    border-bottom: 1px solid black;
-}
-nav a {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
+  font-family: 'Anzicar Serif', serif;
+  background-color: white;
 }
 
-nav{
-    flex : 2;
-    display: flex;
-    gap: 25px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+nav {
+  flex: 2;
+  display: flex;
+  gap: 25px;
 }
 
 
 h1 {
-    font-family: 'Anzicar Serif', serif;
+  font-family: 'Anzicar Serif', serif;
 }
 
 
 .banner {
-    height: 500px;
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    padding-left: 10%;
-    color: white;
+  height: 500px;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  color: white;
 }
+
 .banner_1 {
-    background-image: url(../img/gems4.jpg);
+  background-image: url(../img/gems4.jpg);
 }
+
 .banner_2 {
-    background-image: url(../img/gems1.jpg);
+  background-image: url(../img/gems1.jpg);
 }
+
 .banner_3 {
-    background-image: url(../img/gems2.jpg);
+  background-image: url(../img/gems2.jpg);
 }
+
 .banner_4 {
-    background-image: url(../img/gems7.jpg);
+  background-image: url(../img/gems7.jpg);
 }
+
 .banner_text {
-    text-align: center;
+  text-align: center;
 }
 
 .find_gem {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
 }
+
 .wheel_selector {
-    background-color: aqua;
-    position: relative;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  background-color: aqua;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
+
 .wheel_selector .spin_btn {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    border-radius: 50%;
-    background: #555;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  border-radius: 50%;
+  background: #555;
 }
+
 .sign_selector {
-    background-color: blanchedalmond;
-    width: 400px;
-    height: 400px;
+  background-color: blanchedalmond;
+  width: 400px;
+  height: 400px;
 }
 
 
@@ -104,66 +117,72 @@ h1 {
 /* PRODUCTS */
 
 .products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 30px;
-    margin: auto;
-    text-align: center;
-    font-family: 'Anzicar Serif', serif;
-    max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Anzicar Serif', serif;
+  max-width: 1200px;
 }
+
 .prod {
-    height: 100px;
-    width: 100px;
+  height: 100px;
+  width: 100px;
 }
 
 .price {
-    color: grey;
-    font-size: 22px;
+  color: grey;
+  font-size: 22px;
 }
 
-.prod1, .prod2 , .prod3, .prod4, .prod5, .prod6{
-    margin: 5px;
-    box-shadow: 0 2px 4px 0 black;
-    width: 300px;
+.prod1,
+.prod2,
+.prod3,
+.prod4,
+.prod5,
+.prod6 {
+  margin: 5px;
+  box-shadow: 0 2px 4px 0 black;
+  width: 300px;
 }
 
 button {
-    font-family: 'Anzicar Serif', serif;
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
+  font-family: 'Anzicar Serif', serif;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
 
 .products button:hover {
-    transition: 0.4s;
-    opacity: 0.4;
+  transition: 0.4s;
+  opacity: 0.4;
 }
 
 
 
 /*coco */
 .slideshow {
-    max-width: 600px;
-    margin: 0 auto;
-    margin-top: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .mySlides {
-    display:none;
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -172,20 +191,20 @@ button {
 .sign_up_button {
   padding: 8px 16px;
   background: black;
-  width: auto;             
+  width: auto;
   text-align: center;
 }
 
 .sign_up_button:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 
 }
 
 footer {
-    margin-top: 20px;
-    text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 /*login button*/
@@ -193,17 +212,18 @@ footer {
 .login_button {
   padding: 8px 16px;
   background: black;
-  width: auto;             
+  width: auto;
   text-align: center;
   margin-left: 5px;
 }
 
 .login_button:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 
 }
+
 /*sign up form*/
 
 .form_sign_up {
@@ -264,8 +284,15 @@ footer {
 }
 
 @keyframes fadeIn {
-  from {opacity: 0; transform: translateY(-20px);}
-  to {opacity: 1; transform: translateY(0);}
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*cart */
@@ -301,7 +328,7 @@ footer {
   width: 300px;
   height: 100vh;
   background: white;
-  box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   z-index: 999;
   transition: right 0.3s ease;
@@ -361,4 +388,142 @@ footer {
 .team-member p {
   font-size: 14px;
   color: gray;
+}
+
+/* wheel */
+
+.wheel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.wheel-height {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.wheel {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 2px solid black;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid rgb(35, 29, 116);
+  z-index: 3;
+}
+
+.gem_wheel {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: 'Anzicar Serif', serif;
+}
+
+.segment-label {
+  z-index: 2;
+}
+
+/*bd form */
+
+.bdform {
+  margin-right: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.bdform label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bdform input {
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.bdform button {
+  padding: 10px 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bdform button:hover {
+  color: black;
+  background-color: #ccc;
+}
+
+/* post-it on find your gem */
+
+.postit_gems {
+  margin: 20px;
+}
+
+.postit_gems h2 {
+  text-align: center;
+}
+
+#citation {
+  margin: 30px;
+  font-style: italic;
+  color: #333;
+  text-align: center;
+}
+
+
+#postit {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.postit-item {
+  color: white;
+  background-color: #000000;
+  border: 2px solid black;
+  position: relative;
+  padding: 10px;
+  margin: 30px;
+}
+
+
+.postit-item ul {
+  display: none;
+  position: absolute;
+  min-width: 400px;
+  z-index: 10;
+  list-style-type: none;
+  text-align: left;
+  color: #000;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+
+}
+
+.postit-item:hover ul {
+  display: block;
+
 }

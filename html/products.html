@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css">
     <title>CIGEMS - Products</title>
 </head>
+
 <body>
     <header>
         <a href="../html/index.html" class="logo">
@@ -13,29 +15,29 @@
         </a>
         <nav>
             <a href="./index.html">HOME</a>
-            <!--<a href="./find_gem.html">FIND YOUR GEM</a>-->
+            <a href="./find_gem.html">FIND YOUR GEM</a>
             <a href="./products.html">OUR PRODUCTS</a>
             <a href="./about_us.html">ABOUT US</a>
         </nav>
         <div class="cart">
             <img src="../img/cart.png" alt="Cart Icon" class="cart-icon">
-        <span class="cart-count">0</span>
+            <span class="cart-count">0</span>
         </div>
         <button id="openModal" class="sign_up_button">SIGN UP</button>
         <button id="openLogin" class="login_button">LOGIN</button>
 
     </header>
-    
+
     <section class="banner banner_4">
         <div class="banner_text">
             <h1>Our products</h1>
             <p>- your heaven to find a perfect gem -</p>
         </div>
     </section>
-<br>
+    <br>
     <section class="products">
         <div class="prod1">
-            
+
             <img class="prod" src="../img/prod1.jpg" alt="product1">
             <h1>Tanzanite</h1>
             <p class="price">$100 000</p>
@@ -73,7 +75,7 @@
         </div>
     </section>
 
-    
+
 
     <footer>
         <p>©️2025 Isabelle Somphone & Corentin Monsallier.</p>
@@ -85,53 +87,52 @@
             <span class="close">&times;</span>
             <h2>Sign Up</h2>
             <form id="signupForm">
-            <label for="name">Name</label>
-            <input type="text" id="name" required>
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
 
-            <label for="age">Age</label>
-            <input type="number" id="age" min="0" required>
+                <label for="age">Age</label>
+                <input type="number" id="age" min="0" required>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
 
-            <label for="repeat-password">Repeat Password</label>
-            <input type="password" id="repeat-password" required>
+                <label for="repeat-password">Repeat Password</label>
+                <input type="password" id="repeat-password" required>
 
-            <button type="submit">Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </section>
 
     <section id="login_form" class="form_sign_up">
-    <div class="form-content">
-        <span class="close-login">&times;</span>
-        <h2>Login</h2>
-        <form id="loginForm">
-        <label for="login-email">Email</label>
-        <input type="email" id="login-email" required>
+        <div class="form-content">
+            <span class="close-login">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" required>
 
-        <label for="login-password">Password</label>
-        <input type="password" id="login-password" required>
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required>
 
-        <button type="submit">Login</button>
-        </form>
-    </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
     </section>
 
-<div id="cartSidebar" class="cart-sidebar">
-  <h2>Your Cart</h2>
-  <ul id="cartItems"></ul>
-  <button id="closeCart">Close</button>
-</div>
+    <div id="cartSidebar" class="cart-sidebar">
+        <h2>Your Cart</h2>
+        <br>
+        <ul id="cartItems"></ul>
+        <button id="closeCart">Close</button>
+    </div>
 
-
-
-
-<script src="../js/cart.js"></script>
-<script src="../js/script.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/signup_login.js"></script>
 
 </body>
+
 </html>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css">
     <title>CIGEMS - Find your gem</title>
 </head>
+
 <body>
     <header>
         <a href="../html/index.html" class="logo">
@@ -17,38 +19,95 @@
             <a href="./products.html">OUR PRODUCTS</a>
             <a href="./about_us.html">ABOUT US</a>
         </nav>
+        <div class="cart">
+            <img src="../img/cart.png" alt="Cart Icon" class="cart-icon">
+            <span class="cart-count">0</span>
+        </div>
         <button id="openModal" class="sign_up_button">SIGN UP</button>
+        <button id="openLogin" class="login_button">LOGIN</button>
 
     </header>
-    
+
     <section class="banner banner_3">
         <div class="banner_text">
             <h1>Find your gems </h1>
             <p>- Let your birthday determines your fate -</p>
         </div>
     </section>
-    <section class="find_gem">
-        <div class="wheel_selector">
-            <div class="spin_btn"></div>
-            <div class="wheel">
-                <div class="gem gem_1"><span>1</span></div>
-                <div class="gem gem_2"><span>2</span></div>
-                <div class="gem gem_3"><span>3</span></div>
-                <div class="gem gem_4"><span>4</span></div>
-                <div class="gem gem_5"><span>5</span></div>
-                <div class="gem gem_6"><span>6</span></div>
-                <div class="gem gem_7"><span>7</span></div>
-                <div class="gem gem_8"><span>8</span></div>
-                <div class="gem gem_9"><span>9</span></div>
-                <div class="gem gem_10"><span>10</span></div>
-                <div class="gem gem_11"><span>11</span></div>
-                <div class="gem gem_12"><span>12</span></div>
-                <div class="gem gem_13"><span>13</span></div>
-            </div>
-        </div>
-        <div class="sign_selector">
-        </div>
+    <br>
+    <section class="postit_gems">
+        <h2> YOUR KEY TO HAPPINESS </h2>
+        <p id="citation">"Each gem can reflect your personnality, your attitude and your actions"
+        </p>
+
+        <ol id="postit">
+            <li class="postit-item">Emerald
+
+                <ul>
+                    <li>Emerald has been synonymous with the color green since ancient times. A fine emerald is a truly
+                        breathtaking sight, and this member of the beryl family deserves its placement among the
+                        traditional “Big Four” gems along with diamond, ruby, and sapphire.</li>
+                </ul>
+            </li>
+            <li class="postit-item">Ruby
+
+                <ul>
+                    <li>...</li>
+                </ul>
+            </li>
+            <li class="postit-item">Tourmaline
+
+                <ul>
+                    <li>...</li>
+                </ul>
+            </li>
+            <li class="postit-item">Pezzottaire
+
+                <ul>
+                    <li>...</li>
+                </ul>
+            </li>
+            <li class="postit-item">Diamond
+
+                <ul>
+                    <li>...</li>
+                </ul>
+            </li>
+            <li class="postit-item">Tanzanite
+
+                <ul>
+                    <li>...</li>
+                </ul>
+            </li>
+        </ol>
     </section>
+
+    <br>
+
+    <div class="wheel-container">
+        <div class="wheel-height">
+            <div class="wheel" id="wheel">
+                <div class="gem_wheel" style="transform: rotate(0deg) translateY(-130px);">1</div>
+                <div class="gem_wheel" style="transform: rotate(60deg) translateY(-130px);">2</div>
+                <div class="gem_wheel" style="transform: rotate(120deg) translateY(-130px);">3</div>
+                <div class="gem_wheel" style="transform: rotate(180deg) translateY(-130px);">4</div>
+                <div class="gem_wheel" style="transform: rotate(240deg) translateY(-130px);">5</div>
+                <div class="gem_wheel" style="transform: rotate(300deg) translateY(-130px);">6</div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+
+        <div class="bdform">
+            <form id="birthForm">
+                <label for="birthdate">Enter your birthdate:</label>
+                <input type="date" id="birthdate" required>
+                <button type="submit">Reveal your Gem</button>
+            </form>
+        </div>
+    </div>
+
+    <p id="result"></p>
+
     <br>
     <footer>
         <p>©️2025 Isabelle Somphone & Corentin Monsallier.</p>
@@ -59,26 +118,47 @@
             <span class="close">&times;</span>
             <h2>Sign Up</h2>
             <form id="signupForm">
-            <label for="name">Name</label>
-            <input type="text" id="name" required>
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
 
-            <label for="age">Age</label>
-            <input type="number" id="age" min="0" required>
+                <label for="age">Age</label>
+                <input type="number" id="age" min="0" required>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
 
-            <label for="repeat-password">Repeat Password</label>
-            <input type="password" id="repeat-password" required>
+                <label for="repeat-password">Repeat Password</label>
+                <input type="password" id="repeat-password" required>
 
-            <button type="submit">Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </section>
-<script src="../js/script.js"></script>
+
+    <section id="login_form" class="form_sign_up">
+        <div class="form-content">
+            <span class="close-login">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" required>
+
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="../js/signup_login.js"></script>
+    <script src="../js/wheel.js"></script>
+    <script src="../js/cart.js"></script>
+
 
 </body>
+
 </html>
