@@ -1,37 +1,48 @@
-const segments = ["Emerald", "Ruby", "Diamond", "Tanzanite", "Pezzottaire", "Tourmaline"];
+const segments = [
+  "Emerald",
+  "Ruby",
+  "Diamond",
+  "Tanzanite",
+  "Pezzottaire",
+  "Tourmaline",
+];
 const wheel = document.getElementById("wheel");
 const resultText = document.getElementById("result");
 
 let currentRotation = 0;
 
 function spinWheel(targetIndex, callback) {
-    const segmentAngle = 360 / segments.length;
-    const extraSpins = 5;
-    const targetAngle = targetIndex * segmentAngle;
-    const rotateTo = 360 * extraSpins - targetAngle;
+  const segmentAngle = 360 / segments.length;
+  const extraSpins = 5;
+  const targetAngle = targetIndex * segmentAngle;
+  const rotateTo = 360 * extraSpins - targetAngle;
 
-    currentRotation += rotateTo;
-    wheel.style.transition = "transform 3s ease-out";
-    wheel.style.transform = `rotate(${currentRotation}deg)`;
+  resultText.classList.remove("show");
 
-    setTimeout(() => {
-        callback();
-    }, 3000);
+  currentRotation += rotateTo;
+  wheel.style.transition = "transform 3s ease-out";
+  wheel.style.transform = `rotate(${currentRotation}deg)`;
+
+  setTimeout(() => {
+    callback();
+  }, 3000);
 }
 
 document.getElementById("birthForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-    const birthdate = document.getElementById("birthdate").value;
-    if (!birthdate) return;
+  e.preventDefault();
+  const birthdate = document.getElementById("birthdate").value;
+  if (!birthdate) return;
 
-    const seed = new Date(birthdate).getDate();
-    const index = seed % segments.length;
-    const chosen = segments[index];
+  const seed = new Date(birthdate).getDate();
+  const index = seed % segments.length;
+  const chosen = segments[index];
 
-    resultText.innerText = "";
+  resultText.innerText = "";
+  resultText.classList.remove("show");
 
-    spinWheel(index);
-    setTimeout(() => {
-        resultText.innerText = `Your gem is: ${segments[index]}`;
-    }, 3000);
+  spinWheel(index);
+  setTimeout(() => {
+    resultText.innerText = `Your gem is: ${segments[index]}`;
+    resultText.classList.add("show");
+  }, 3000);
 });

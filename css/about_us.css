@@ -1,0 +1,50 @@
+/* ABOUT US */
+.about-us {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 20px;
+  background-color: white;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.team-member {
+  max-width: 200px;
+}
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px black;
+  transition: transform 0.3s ease;
+}
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+.team-member h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.team-member p {
+  font-size: 14px;
+  color: gray;
+}
+
+/* MAP */
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+#map {
+  height: 750px;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px black;
+  border: 2px solid #333;
+}

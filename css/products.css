@@ -1,0 +1,34 @@
+/* PRODUCTS */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  margin: auto;
+  text-align: center;
+  font-family: "Anzicar Serif", serif;
+  max-width: 1200px;
+}
+.prod {
+  height: 100px;
+  width: 100px;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.prod1,
+.prod2,
+.prod3,
+.prod4,
+.prod5,
+.prod6 {
+  margin: 5px;
+  box-shadow: 0 2px 4px 0 black;
+  width: 300px;
+}
+.products button:hover {
+  transition: 0.4s;
+  opacity: 0.4;
+}
