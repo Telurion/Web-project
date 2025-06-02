@@ -24,5 +24,10 @@ We use [Leaflet](https://leafletjs.com/) to display a zoomable map centered on V
 
 ## Authors
 
-- **Isabelle Somphone** — Co-Founder
-- **Corentin Monsallier** — Co-Founder
+- **Isabelle Somphone** — Co-Founder — Github : @Telurion
+- **Corentin Monsallier** — Co-Founder — Github : @Somphone-Isabelle
+
+## Links
+
+- [Mockup](https://www.figma.com/design/uM4g5R5qjVxx8j1DQSiL6O/Untitled?node-id=0-1&t=cXRRgKHUVS3SOn3b-1)
+- [Github](https://github.com/Telurion/Web-project.git)

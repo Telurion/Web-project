@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/about_us.css" />
-    <title>CIGEMS - About 'use strict'</title>
-
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
+    <title>CIGEMS - About 'use strict'</title>
+
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
@@ -24,6 +24,7 @@
     <header>
       <a href="../html/index.html" class="logo">
         <img src="../img/logo.png" alt="LOGO_Img" width="400" />
+        <!-- src: our own logo -->
       </a>
       <nav>
         <a href="./index.html">HOME</a>
@@ -33,6 +34,7 @@
       </nav>
       <div class="cart">
         <img src="../img/cart.png" alt="Cart Icon" class="cart-icon" />
+        <!-- src : https://www.vecteezy.com/vector-art/7528239-shopping-bag-icon-shopping-bag-design-illustration-shopping-bag-simple-sign-shopping-bag-logo-design-->
         <span class="cart-count">0</span>
       </div>
       <button id="openModal" class="sign_up_button">SIGN UP</button>
@@ -88,21 +90,23 @@
     </section>
 
     <section class="banner banner_2">
+    <!-- src: https://www.istockphoto.com/fr/search/search-by-image?imageurl=aHR0cHM6Ly9nZXR0eS11bmlzcG9ya2FsLXVzdzItcHJvZC12aXN1YWwtc2VhcmNoLnMzLnVzLXdlc3QtMi5hbWF6b25hd3MuY29tL3Byb2R1Y3Rpb24vZWEyZGJjNzdjYmU4NjljZWY2MmVlN2U1MjgzODJjNDE0ZDdlN2MzY2E3ZGY0ZjFmMTA5ZGU3MDFiNDQ4M2VkOGVmP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNvbnRlbnQtU2hhMjU2PVVOU0lHTkVELVBBWUxPQUQmWC1BbXotQ3JlZGVudGlhbD1BU0lBV0hNWFBOQ1VHSlRTRlpMUCUyRjIwMjUwNjAyJTJGdXMtd2VzdC0yJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYwMlQyMTI4MjNaJlgtQW16LUV4cGlyZXM9OTAwJlgtQW16LVNlY3VyaXR5LVRva2VuPUlRb0piM0pwWjJsdVgyVmpFQzRhQ1hWekxYZGxjM1F0TWlKSU1FWUNJUUQ5dTREcm9QTVA4JTJCeWF3QUtycGNFN05qbGFoZTc3aThIaWFZTlNlRlVzbFFJaEFMVkpIUWRhU2dmanZUTzh5a29tZjRwMGphUm9oY0V3bzlBdnlBT2pUN1VUS3BvRUNQYiUyRiUyRiUyRiUyRiUyRiUyRiUyRiUyRiUyRiUyRndFUUF4b01OREk0TWpBek56azJOalE0SWd5bGZ4YkExUExSazAlMkJkSjA0cTdnTUk5NUE3T0huY2V1JTJCUjBobDlVbUZubjFjeXRQNGYxdWtMb2lNRTdKVW1WVHV0bFV2UTAzYXJQanluUlo2VVpKa1lTV0xlTlFPMVh4VjJBZXJMYklpTDlQbVF3bWFRbTNiVWJpbnFyUUFmNEFRN2t0SWZiNWJuVkpvU3pZdHRneTB5akhPV1ZjenJrUG0ySUVFaUVTNkhCOXYlMkZBNnF2MmU5SHZ2N25kJTJCMWh3eVRFbFhNTjZzVmR3bFVSWVZLZ1d2ZVdtc2w0MWMlMkZUN1VBVUQ2ZXNaYTN0WWxWdEtlS2dLdmU1MjdEejZnbEJWUW1IVVlIMUc4UlNSSlRtYVR2MGpja1olMkZ3SzlyQXVrekNLWkZVQTlKaHpGTVBOVVdyeTlIODJpMUFvRm91cWNUWVFYblgwNXJxeFgxRDN1SDBENEd5JTJCbEVlQ1oxWFczbWM0QVFKa1E2d2ttTkJkcUM2OTFnSHFuSGdjaHREOXRrJTJGJTJGbW5JYk9wTGFsWXdtRGRVJTJCYXpadjVNQzNpSkhZa3RyQSUyQjVHJTJGR2tpMWY4ZXYwOW4lMkZoa0pVVDVmcnFUQkdkbjhYbmFVQXpjYnd3Q2ZYSXE2WWF1RlRTMXVLcjZMOXlRd05yWU9rZG00V2dTUzRtblo1QlllWmRtTk9vU0tOU1BBYTRhcnR0Q2JWeTdoNEg0YXpHdHl2Z3ZNQmVEa0Y4RjNJaVlYUUF6STl6UTk0aFEyVXd4UkVjYlFMaTQzMUk1ZWpZZUhNNk53cUxQOXJIbkR3MWNoMmtHVWpIUURINUl6bjZ0eUJZaXNuYlhlT1kwMVh0a2JiN2p2ZUlYRWlFWnFJYjhaOGdxVzkwTnlNY1k4cmdYNXFUcGpzeEFNJTJCN0dmeWxPbFdKempDTXJQakJCanFsQVZzbGtjdHlYcEZKc1RqJTJCNUJiMlpxNldkZDV0Q2lqVkxnMG1DZkw1c1pTcTN5Qk1PM1J2aGtiWUc2U04lMkZyRHB1MWdPaW9xTFZjMnFHcHJpQTJBWko4alIlMkJ5WlYlMkJCSnUlMkJKdUpGZ1hWZXRnRVFrOGhES1hjNmtBS0I5Y3B0YlJjV1lJYlY4aHZEVm1nWWklMkJrVHNONUprdU1WcU4yMWhmWE9zVnR2MUclMkZFdk5WVEdMSCUyRndsTEpyRDNId0xSNGg2aVpzaXM3SDNEaCUyQlhvVFV2b1c1bVFLamR5VXdNNkp3JTNEJTNEJlgtQW16LVNpZ25hdHVyZT0xMDhkNDM4ZWU2MzgwNjNhN2QxYzI5ZDgxYzQ3NjUzOTdiMmU0OWI1ZTA3YjdhNzE5NDg5ZWJkY2Y3MTRiYmVhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZ4LWlkPUdldE9iamVjdA&assettype=image -->
       <div class="banner_text">
         <h1>Welcome to CIGEMS</h1>
         <p>- Your Heaven to Find a Perfect Gem -</p>
-        <button class="shop-now-btn">SHOP NOW</button>
       </div>
     </section>
 
     <section class="about-us">
       <div class="team-member">
         <img src="../img/isabelle.jpeg" alt="Isabelle" class="profile-pic" />
+        <!-- src: Photo privee -->
         <h3>Isabelle Somphone</h3>
         <p>Co-Founder</p>
       </div>
       <div class="team-member">
         <img src="../img/Corentin.png" alt="Corentin" class="profile-pic" />
+        <!-- src: Photo privee -->
         <h3>Corentin Monsallier</h3>
         <p>Co-Founder</p>
       </div>
@@ -113,15 +117,13 @@
     </div>
 
     <footer>
-      <div class="copyright">
-        <p>
-          ©️2025 Isabelle Somphone & Corentin Monsallier. All rights reserved.
-          <br />
-          <a href="./about_us.html" class="footer-link"
-            >Visit our About Us page</a
-          >
-        </p>
-      </div>
+      <p>
+        &copy2025 Isabelle Somphone & Corentin Monsallier. All rights reserved.
+        <br />
+        <a href="./about_us.html" class="footer-link"
+          >Visit our About Us page</a
+        >
+      </p>
     </footer>
 
     <script src="../js/cart.js"></script>
